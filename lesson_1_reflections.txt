@@ -1,0 +1,33 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+	Trying to find bugs in large text files can become tedious
+	By doing a diff between edited versions can significantly narrow down the search
+	And it makes it very easy to stop the changes and then it is a matter of discovering the bugs
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+	Programming is about solving sub problems and these are typically done is short iterations.
+	At some point if the programmer may want to revert to an older version of the working code.
+	Access to the complete history of the code will help quickly revert and make life easy for the programmer.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+	Logical commits make the history read better.
+	So, manual method put us in control of performing commits at some logical check point.
+	However, there is a chance of forgetting to commit, at times.
+	With automatic save, there is no chance to lose work,
+	but that does not meaningfully present the history.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+	git is supports projects that requires working on multiple dependent files by tracking them in a repository. Git makes it convenient for comparing files within the same repository. On the other hand Google drive keeps track of each file separately and does not have the concept of repository. While it is possible to review the history of two files it is tedious because the comparision is manual.
+
+How can you use the commands git log and git diff to view the history of files?
+	git log presents the history of the commits with commit IDs, timestamp, author and a message.
+	git log --stat gives the number of insertions and deletions
+	git diff is used to review the contents of the two file versions side by side
+
+How might using version control make you more confident to make changes that could break something?
+	Version control system like git provides an unlimited undo
+	This gives the programmer courage to try out things without having to worry about breaking it
+
+Now that you have your workspace set up, what do you want to try using Git for?
+	I can set up my entire workspace to use git. Each project I work on can be a repository.
+	I can keep doing the commits and look at how I have accomplished the work and won't have to remember them all.
+
