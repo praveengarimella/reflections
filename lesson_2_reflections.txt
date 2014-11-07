@@ -11,3 +11,27 @@ How is the staging area different from the working directory and the repository?
 	At each logical checkpoint I want to commit a subset of the files in the working directory.
 	Staging is very helpful in this case.
 
+How can you use the staging area to make sure you have one commit per logical change?
+	Small incremental changes can be staged multiple times.
+	When there is a logical checkpoint then use commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	During development there are cases of experimenting new features.
+	Ideally the experiments should be created as a new branch.
+	Another case is to have branch for variations of the core program.
+	This keeps the code based organized.
+	Eases checking out commits, comparing them and tracking the head.
+
+How do the diagrams help you visualize the branch structure?
+	The tree like diagram helps understand how the commits progressed.
+	The branches are seen with a chrono order of the commits.
+	It is easy to find if there are any commits that are not reachable.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	The commits in both branches are merged and it is made the tip of the tree.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Automatic merging saves a lot of time.
+	But may not work as intended at all times.
+	Manual merging can get annoying depending on the number of conflicts.
+	It may require the two people to get together and resolve together.
